@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            Hello!
+        </title>
+        <script>
+        function greet()
+        {
+            let name = document.querySelector('#name')
+             alert('Hello!');
+             if(name === '')
+             {
+                 name='world';
+             }
+             document.querySelector('#result')
+             
+             
+        }
+        </script>
+        <body>
+            <form onsubmit = "greet(); return false;">
+                <input type = "text"; id= "name">
+                <input type='subsmit'>
+            </form>
+        </body>
+        <style>
+            .title
+            {
+                text-align = center;
+                color: purple;
+                
+            }
+        </style>
+    </head>
+    
+    <body style="color: blue; background-color: grey">
+        <h1 style="text-align: center;"> Hello, world! </h1>
+        <p> This is the webpage </p>
+        
+        
+        <h2 class = "title" > Subsection </h2>
+        <p class = "blue"> This is some text. </p>
+        <h2> Subsection 2 </h2>
+        <p class = "blue"> This is some more text </p>
+        
+    </body>
+</html>
