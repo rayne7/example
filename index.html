@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+
+        <script>
+
+            // TODO: Add code to check answers to questions
+
+        </script>
+
+    </head>
+    <body>
+
+        <div class="jumbotron">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+
+                <h3> What sound does a dog make? </h3>
+                <button id = "red1"> Meow </button>
+                <button id = "red2"> Moo </button>
+                <button id = "green"> Woof </button>
+                <p id = "feedback1"></p>
+                <script>
+                    document.querySelector('#red1').onclick = function()
+                    {
+                        document.querySelector('#red1').style.backgroundColor = 'red'
+                        document.querySelector('#feedback1').innerHTML = 'incorrect';
+                    };
+                        document.querySelector('#red2').onclick = function(){
+                        document.querySelector('#red2').style.backgroundColor = 'red';
+                        document.querySelector('#feedback1').innerHTML = 'incorrect';
+                    };
+                    document.querySelector('#green').onclick = function()
+                    {
+                        document.querySelector('#green').style.backgroundColor = 'green';
+                        document.querySelector('#feedback1').innerHTML = 'correct';
+                    };
+                </script>
+               <!-- TODO: Add multiple choice question here -->
+
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                 <h3> What food is "a powerhouse of disease-fighting nutrients"?</h3>
+                 <input id = 'input' type = text></input>
+                 <button id = "check"> Check if you were correct! </button>
+                 <p id = "part2"
+                <!-- TODO: Add free response question here -->
+                <script>
+                document.querySelector('#check').onclick = function()
+                {
+                    
+                    let input = document.querySelector('#input');
+                    
+                    
+                    if (input.value === 'eggs')
+                    {
+                        input.style.backgroundColor = 'green';
+                        document.querySelector('#part2').innerHTML = 'correct';
+                    } 
+                    else 
+                    {
+                        input.style.backgroundColor = 'red';
+                        document.querySelector('#part2').innerHTML = 'incorrect';
+                    }
+
+                }
+                </script>
+
+            </div>
+
+        </div>
+    </body>
+</html>
